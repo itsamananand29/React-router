@@ -9,6 +9,7 @@ import AllProducts from "./AllProducts";
 import { Users } from "./Users";
 import { Admin } from "./Admin";
 import { User } from "./User";
+import { PageNotFound } from "./PageNotFound";
 const LazyHome = React.lazy(() => import("./Home"));
 const LazyAbout = React.lazy(() => import("./About"));
 
@@ -42,6 +43,7 @@ class App extends Component {
             <Route path=":userId" element={<User />} />
             <Route path="admin" element={<Admin />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     );
