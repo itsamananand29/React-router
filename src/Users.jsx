@@ -7,6 +7,7 @@ export const Users = (props) => {
       <NavLink to="/"></NavLink>
       <NavLink to="/"></NavLink>
       <NavLink to="/"></NavLink>
+      <h3>Note: enter /userId in url to see user details</h3>
       <Outlet />
     </>
   );
